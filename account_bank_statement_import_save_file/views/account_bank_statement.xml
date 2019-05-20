@@ -5,8 +5,8 @@
             <field name="model">account.bank.statement</field>
             <field name="inherit_id" ref="account.view_bank_statement_form" />
             <field name="arch" type="xml">
-                <xpath expr="//page[@string='Transactions']" position="after">
-                    <page string="Imported file" attrs="{'invisible': [('import_file', '=', False)]}">
+                <xpath expr="//page[@name='statement_line_ids']" position="after">
+                    <page string="Imported file" name="import_file" attrs="{'invisible': [('import_file', '=', False)]}">
                         <group>
                             <group>
                                 <field name="import_file" />

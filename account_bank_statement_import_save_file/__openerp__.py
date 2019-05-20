@@ -20,7 +20,7 @@
 ##############################################################################
 {
     "name": "Save imported bank statements",
-    "version": "8.0.1.0.0",
+    "version": "9.0.1.0.0",
     "author": "Therp BV",
     "license": "AGPL-3",
     "category": "Accounting & Finance",
@@ -37,7 +37,7 @@
     ],
     "post_init_hook": '_post_init_hook',
     "auto_install": False,
-    'installable': False,
+    'installable': True,
     "application": False,
     "external_dependencies": {
         'python': [],
